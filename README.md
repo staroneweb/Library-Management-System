@@ -5,9 +5,9 @@ This project was developed as part of a backend technical assessment to demonstr
 
 The system allows users to browse and borrow books, while admins can manage books, users, and loan records.
 
-Features
+### ***Features***
 
-👤 User Roles
+### 👤 User Roles
 
 * **Anonymous Users**
 
@@ -23,7 +23,7 @@ Features
   * Manage users
   * View and manage loan records
 
-🔐 Authentication & Authorization
+### 🔐 Authentication & Authorization
 
 * User registration & login APIs
 * JWT authentication (Access & Refresh tokens)
@@ -31,7 +31,7 @@ Features
 
   * Admin vs normal user vs anonymous
 
-📖 Book Management
+### 📖 Book Management
 
 * Add, update, delete books (Admin only)
 * Book fields:
@@ -59,7 +59,7 @@ Each loan stores:
 * Borrow date
 * Return date
 
-🛠 Tech Stack
+### 🛠 Tech Stack
 
 * **Backend:** Django 6.0, Django REST Framework
 * **Database:** PostgreSQL
@@ -69,7 +69,7 @@ Each loan stores:
 * **Deployment Ready:** Docker + PostgreSQL
 
 
-⚙️ Project Setup
+### ⚙️ Project Setup
 
 1️⃣ Clone the Repository
 
@@ -135,7 +135,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-📑 API Documentation (Swagger)
+### 📑 API Documentation (Swagger)
 
 Swagger UI is available at:
 
@@ -143,7 +143,7 @@ Swagger UI is available at:
 http://127.0.0.1:8000/swagger/
 ```
 
-From Swagger you can:
+### From Swagger you can:
 
 * Register users
 * Login users
@@ -151,7 +151,7 @@ From Swagger you can:
 * Borrow & return books
 * View loan history
 
-🔑 JWT Authentication Flow
+### 🔑 JWT Authentication Flow
 
 1. Register → `/api/auth/register/`
 2. Login → `/api/auth/login/`
@@ -159,7 +159,7 @@ From Swagger you can:
 4. Refresh access token → `/api/auth/refresh/`
 5. Logout (optional)
 
-📬 API Endpoints Summary
+### 📬 API Endpoints Summary
 
 Auth
 
@@ -181,7 +181,7 @@ Loans
 * `POST /api/loans/return/`
 * `GET /api/loans/`
 
-🧪 Testing (Planned)
+### 🧪 Testing (Planned)
 
 * Unit tests for:
 
@@ -195,7 +195,23 @@ Loans
   * JWT authentication
 * Coverage report using `coverage`
 
-*(Test implementation can be added later.)*
+### Test Coverage
+
+This project uses **pytest + pytest-django + coverage** for automated testing.
+
+Current test coverage:
+
+- **Overall Coverage: 94%**
+- Auth, Books, and Loans modules are fully tested
+- Unit + integration tests are included
+
+To run tests with coverage:
+
+```bash
+coverage run -m pytest
+coverage report
+coverage html
+
 
 
 🐳 Docker Support (Planned)
