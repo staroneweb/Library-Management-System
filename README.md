@@ -99,9 +99,9 @@ Create a `.env` file in the root directory:
 SECRET_KEY=your-secret-key
 DEBUG=True
 
-POSTGRES_DB=lms_db
+POSTGRES_DB=lms
 POSTGRES_USER=postgres
-POSTGRES_PASSWORD=yourpassword
+POSTGRES_PASSWORD=****************
 POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 
@@ -113,7 +113,7 @@ ALLOWED_HOSTS=127.0.0.1,localhost
 
 5️⃣ Configure PostgreSQL
 
-* Create a database named: `lms_db`
+* Create a database named: `lms`
 * Make sure PostgreSQL is running
 * Update `.env` with correct credentials
 
