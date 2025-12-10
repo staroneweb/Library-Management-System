@@ -211,10 +211,10 @@ To run tests with coverage:
 coverage run -m pytest
 coverage report
 coverage html
+```
 
 
-
-🐳 Docker Support (Planned)
+### 🐳 Docker
 
 * Dockerfile for Django app
 * Docker-compose for Django + PostgreSQL
