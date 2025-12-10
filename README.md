@@ -66,7 +66,7 @@ Each loan stores:
 * **Authentication:** JWT (SimpleJWT)
 * **Documentation:** Swagger (drf-yasg)
 * **Environment Management:** python-dotenv
-* **Deployment Ready:** Docker + PostgreSQL ready
+* **Deployment Ready:** Docker + PostgreSQL
 
 
 ⚙️ Project Setup
@@ -82,7 +82,7 @@ cd library-management-system
 
 ```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate
 ```
 
 3️⃣ Install Dependencies
