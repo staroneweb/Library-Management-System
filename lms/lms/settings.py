@@ -14,6 +14,8 @@ import os
 from dotenv import load_dotenv
 from datetime import timedelta
 
+from drf_yasg import openapi
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -156,13 +158,14 @@ SWAGGER_SETTINGS = {
         'Bearer': {
             'type': 'apiKey',
             'name': 'Authorization',
-            'in': 'header'
+            'in': 'header',
+            'description': "Enter token as: Bearer <your access token>"
         }
     },
 }
 
-SWAGGER_USE_COMPAT_RENDERERS = False
 
+SWAGGER_USE_COMPAT_RENDERERS = False
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/

@@ -20,7 +20,7 @@ services:
     environment:
       POSTGRES_DB: lms
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: 12staroneweb34#$
     ports:
       - "5432:5432"
     volumes:

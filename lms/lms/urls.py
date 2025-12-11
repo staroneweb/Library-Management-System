@@ -12,12 +12,10 @@ schema_view = get_schema_view(
         title="Library Management System API",
         default_version='v1',
         description="API documentation for the Library Management System",
-        terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="admin@test.com"),
-        license=openapi.License(name="BSD License"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
+    authentication_classes=[],
 )
 
 urlpatterns = [
